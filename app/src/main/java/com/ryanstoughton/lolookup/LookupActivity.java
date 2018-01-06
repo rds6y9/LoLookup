@@ -71,7 +71,7 @@ public class LookupActivity extends AppCompatActivity {
             String result = task.execute("https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summonerName + "?api_key=RGAPI-d1143ce4-626c-4897-8cdc-edc8a543f7cb").get();
             Log.i("Result of API Call", result);
 
-            Intent intent = new Intent(this, SummonerDetailActivity.class);
+            Intent intent = new Intent(this, SummonerDetailActivity.class).putExtra("SummonerInfo", result);
             startActivity(intent);
         } catch (InterruptedException e) {
             e.printStackTrace();
