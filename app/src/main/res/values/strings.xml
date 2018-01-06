@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoLookup</string>
+    <string name="lookup_hint">Enter a Summoner Name</string>
+    <string name="lookup_button">Look Up</string>
+    <string name="splash_text">LoLookup</string>
+    <string name="nameNotFound">Name Not Found!</string>
+</resources>
